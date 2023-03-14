@@ -85,20 +85,23 @@ function agregarProducto(id){
                 else if (producto.id === id){
                     if (producto.stock >= cantidad){
                         if (carrito.length == 0){
-                                    carrito.push({
-                                        id: id,
-                                        nombre: producto.nombre,
-                                        marca: producto.marca,
-                                        precio: producto.precio,
-                                        cantidad: cantidad
-                                    });
-                                    alert("Producto agregado al carrito");
+                            carrito.push({
+                                id: id,
+                                nombre: producto.nombre,
+                                marca: producto.marca,
+                                precio: producto.precio,
+                                cantidad: cantidad
+                            });
+                            console.log(id)
+                            producto.stock -= cantidad;  
+                            alert("Producto agregado al carrito");
                         }
                         else{
                             carrito.forEach(elemento => {
                                 if(elemento.id === id){
                                     elemento.cantidad += cantidad;
-                                    elemento.stock -= cantidad;
+                                    
+                                    productos[id].stock -= cantidad;
                                     alert("Producto agregado al carrito");
                                 }else{
                                     carrito.push({
@@ -108,6 +111,7 @@ function agregarProducto(id){
                                         precio: producto.precio,
                                         cantidad: cantidad
                                     });
+                                    productos[id-1].stock -= cantidad;
                                     alert("Producto agregado al carrito");
                                 }
                             })
@@ -168,6 +172,7 @@ function quitarProducto(){
                 encontrado = true;
                 if(cantidadQuitar <= carrito[i].cantidad){
                     carrito[i].cantidad -= cantidadQuitar;
+                    productos[id-1].stock += cantidadQuitar;            ///////////////////////////////////////
                 }
                 else if(carrito[i].cantidad == 0){
                     alert(`No hay más productos con el id ${carrito[i].cantidad} en el carrito`);

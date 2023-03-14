@@ -1,20 +1,7 @@
-1era Entrega:
-    1. Menú de logueo a base de prompts y alerts
-    2. Sistema para agregar productos al carrito
-    3. Sistema para mostrar el carrito con IVA discriminado y costo de envío
-    
-El proyecto final constará de 4 scripts:
-    1. Menú de Logueo
-    2. Sistema Carro de Compras
-    3. Sistema de Filtros
-    4. Script que calcula costo total producto
-
-1.  El menú de logueo tomará los datos de usuario y si son correctos, mostrará un mensaje de bienvenida, caso contrario devolverá un mensaje de error.
-
-2.  El sistema carro de compras mostrará un mensaje por cada producto que se agregue al carro y posteriormente permitirá visualizar los productos seleccionados.
-
-3.  El sistema de filtros permitirá filtrar productos haciendo uso de tags, de manera que al chequear una característica, se muestren sólo los elementos que la presentan.
-
-4.  En conjunto con el sistema carro de compras, se calculará el costo final del pedido (Total + Impuestos + Envío + Recargo por tipo de pago).
-
-En conclusión:  Se hará uso de de javascript para darle funcionalidades a la página, mejorando el sistema de compra online propuesto en instancia previa (Desarrollo Web). El proyecto se desarrollará en distintas etapas dentro del plazo de entrega correspondiente y con las pertinentes mejoras y correcciones necesarias.
+2da Entrega:
+	Se crearon objetos para cargar cuentas y y contraseñas de los usuarios de la página.
+	Se crearon objetos para cargar los productos de la página e interactuar con ellos mediante el uso de la herramienta "carrito".
+	Se modificó tanto la carga de datos de productos como la carga de datos de los usuarios para que sea más robusto (devoluciones de la primera Pre-Entrega).
+	Se crearon objetos de productos y usuarios a modo de ejemplo.
+	Opción de registro de usuarios y carga de productos.
+	Se mejoró el sistema de stock de productos.
