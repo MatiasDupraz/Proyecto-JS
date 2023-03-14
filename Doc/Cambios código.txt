@@ -1,0 +1,7 @@
+onchange para verificar datos correo y contraseña verificar con submit
+
+menú de filtros creado a basse de caracteristicas (cada producto será un objeto con caracteristicas)
+
+cambiar código página de producto
+
+hacer que el correo se pase a minuscula para verificar con la cuenta cargaada (non caseSensitive)
