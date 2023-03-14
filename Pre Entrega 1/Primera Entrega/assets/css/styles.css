@@ -1,0 +1,43 @@
+.container2 {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .cards {
+    display: flex;
+    padding: 25px;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+    max-width: 400px;
+    margin: 10px;
+  }
+  
+  .card > a:link {
+    color: #000000;
+  }
+  
+  .card:hover > a:link {
+    color: #FFFFFF;
+  }
+  
+  .card > a > .btn {
+    z-index: 3;
+    position: absolute;
+    transform: translate(-125%, 600%);
+  }
+  
+  .card > button{
+    width: 50px;
+    margin-left: 10px;
+  }
