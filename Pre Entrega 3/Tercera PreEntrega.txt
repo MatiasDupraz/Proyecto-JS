@@ -1,0 +1,21 @@
+3ra Entrega:
+	En esta entrega hice foco en el menú de logueo y registro, logrando almacenar y consultar las cuentas.
+	
+	Se encontró problema en segunda entrega que luego de cargar determinada cantidad de productos, por error de verificación, se cargaban en una nueva posición productos ya existentes en el carrito (Solucionado).
+	
+	Se mejoró interfaz de logueo y registro haciendo uso de forms en lugar de prompts, se modifica innerHTML para mostrar los errores en caso de presentarse problemas con los datos ingresados.
+		Se cargan las cuentas registradas en el local storage y al momento de loguearse se consultan los datos en el mismo lugar.
+	
+	Se comenzó con el sistema de carrito generando elementos de html a partir de js.
+		Se creó la interfaz gráfica de carrito.
+		Se pueden cargar productos al carrito y visualizarlos en el mismo, pero de momento no se pueden eliminar.
+	
+	
+Falta:
+	Modificar y eliminar elementos del carrito.
+	Seleccionar al momento de cargar productos la cantidad sin hacer uso de prompts.
+	Menú de Filtro Funcional.
+	Crear tarjetas y publicaciones en base a los datos del objeto.
+	Agregar más eventos menú de logueo / registro y sistema carrito.
+	
+	
