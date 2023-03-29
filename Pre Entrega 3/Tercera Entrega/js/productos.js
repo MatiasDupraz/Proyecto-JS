@@ -160,7 +160,7 @@ function agregarProducto(id){
                             alert("Producto agregado al carrito");
                             encontrado = true;
                         }
-                        if (carrito.length == 0){ //si el carrito está vacío
+                        else if (carrito.length == 0){ //si el carrito está vacío
                             carrito.push({
                                 id: id,
                                 tipo: producto.tipo,
